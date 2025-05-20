@@ -1,0 +1,22 @@
+*{
+    scroll-behavior: smooth;
+}
+#about{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgb(23, 23, 96),rgb(5, 5, 5)); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-container{
+    width: 100vw;
+    height: 100vh;
+    gap: 50px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
