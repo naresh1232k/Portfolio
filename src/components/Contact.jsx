@@ -30,12 +30,16 @@ export default function Contact() {
             <h2 className="h2">Let's Build<br /><span className="grad">Something Great.</span></h2>
             <p className="ct-desc">Whether you have a project in mind, want to collaborate, or just say hi — my inbox is always open. I'll reply within 24 hours.</p>
             <div className="ct-chs">
-              {[{i:'📧',l:'Email',v:'naresh1232k@gmail.com',h:'mailto:naresh1232k@gmail.com'},{i:'💼',l:'LinkedIn',v:'www.linkedin.com/in/nareshj2425',h:'#'},{i:'🐙',l:'GitHub',v:'https://github.com/naresh1232k',h:'#'}].map(c=>(
-                <a key={c.l} href={c.h} className="ct-ch glass">
-                  <span className="ct-chi">{c.i}</span>
-                  <div><span className="ct-chl">{c.l}</span><span className="ct-chv">{c.v}</span></div>
-                </a>
-              ))}
+              {[
+                  {i:'📧',l:'Email',v:'naresh1232k@gmail.com',h:''},
+               {i:'💼',l:'LinkedIn',v:'www.linkedin.com/in/nareshj2425',h:'https://www.linkedin.com/in/nareshj2425'},
+              {i:'🐙',l:'GitHub',v:'https://github.com/naresh1232k',h:'https://github.com/naresh1232k'}
+   ].map(c=>(
+  <a key={c.l} href={c.h} className="ct-ch glass" target="_blank" rel="noopener noreferrer">
+    <span className="ct-chi">{c.i}</span>
+    <div><span className="ct-chl">{c.l}</span><span className="ct-chv">{c.v}</span></div>
+  </a>
+    ))}
             </div>
             <div className="ct-avail"><span className="ct-dot"/><span>Currently available for freelance & full-time roles</span></div>
           </div>
