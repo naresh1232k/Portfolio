@@ -1,0 +1,25 @@
+.ct-sec { background:linear-gradient(180deg,transparent 0%,rgba(11,17,32,.45) 100%); }
+.ct-grid { display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start; }
+.ct-desc { color:var(--t2);line-height:1.82;margin-bottom:1.8rem;font-size:.97rem; }
+.ct-chs  { display:flex;flex-direction:column;gap:.7rem;margin-bottom:1.8rem; }
+.ct-ch   { display:flex;align-items:center;gap:1rem;padding:.95rem 1.25rem;text-decoration:none;color:inherit; }
+.ct-chi  { font-size:1.3rem;flex-shrink:0; }
+.ct-chl  { display:block;font-family:var(--fm);font-size:.67rem;color:var(--t3);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.18rem; }
+.ct-chv  { display:block;font-size:.87rem;color:var(--t2);transition:color var(--tr); }
+.ct-ch:hover .ct-chv { color:var(--cyan); }
+.ct-avail { display:flex;align-items:center;gap:.6rem;font-family:var(--fm);font-size:.73rem;color:var(--t2); }
+.ct-dot   { width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 10px rgba(34,197,94,.65);flex-shrink:0;animation:pulseGlow 2s ease-in-out infinite; }
+.ct-card  { padding:2.2rem; }
+.ct-form-title { font-size:1.15rem;font-weight:700;margin-bottom:1.5rem; }
+.ct-form  { display:flex;flex-direction:column;gap:1.15rem; }
+.ct-field { display:flex;flex-direction:column;gap:.42rem; }
+.ct-field label { font-family:var(--fm);font-size:.7rem;color:var(--t2);text-transform:uppercase;letter-spacing:.12em; }
+.ct-field input, .ct-field textarea { background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:var(--r);padding:.75rem 1rem;color:var(--t1);font-family:var(--ff);font-size:.9rem;resize:vertical;outline:none;transition:border-color var(--tr),background var(--tr); }
+.ct-field input::placeholder,.ct-field textarea::placeholder { color:var(--t3); }
+.ct-field input:focus,.ct-field textarea:focus { border-color:var(--cyan);background:rgba(0,245,212,.025); }
+.ct-submit { width:100%;justify-content:center;padding:.9rem;margin-top:.25rem; }
+.ct-submit:disabled { opacity:.6;cursor:not-allowed;transform:none !important; }
+.ct-success { display:flex;flex-direction:column;align-items:center;gap:.75rem;padding:2.5rem 1rem;text-align:center; }
+.ct-success span { font-size:2.5rem; }
+.ct-success p { color:var(--t2);font-size:.97rem;line-height:1.7; }
+@media (max-width:960px) { .ct-grid { grid-template-columns:1fr;gap:3rem; } }
