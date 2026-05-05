@@ -46,7 +46,7 @@ export default function About() {
 };`}</pre>
             </div>
             <div className="ab-qstats">
-              {[{i:'🚀',v:'2+ Projects',l:'Developed'},{i:'⚡',v:'98 / 100',l:'Lighthouse Score'},{i:'☕',v:'1 cups/day',l:'Coffee (minimum)'}].map(s=>(
+              {[{i:'🚀',v:'3+ Projects',l:'Developed'},{i:'⚡',v:'98 / 100',l:'Lighthouse Score'},{i:'☕',v:'1 cups/day',l:'Coffee (minimum)'}].map(s=>(
                 <div key={s.l} className="ab-qstat glass"><span>{s.i}</span><div><strong>{s.v}</strong><small>{s.l}</small></div></div>
               ))}
             </div>

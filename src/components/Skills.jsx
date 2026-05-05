@@ -2,27 +2,27 @@ import React, { useEffect, useRef, useState } from 'react'
 import './Skills.css'
 
 const GROUPS = [
-  { icon:'{ }', title:'Core Languages', skills:[{n:'JavaScript (ES6+)',p:90},{n:'HTML5',p:95},{n:'CSS3 / SCSS',p:92},{n:'TypeScript',p:72}] },
-  { icon:'⚛',  title:'Frameworks & Libraries', skills:[{n:'React.js',p:88},{n:'Vite',p:85},{n:'Tailwind CSS',p:90},{n:'Framer Motion',p:70}] },
+  { icon:'{ }', title:'Core Languages', skills:[{n:'JavaScript (ES6+)',p:90},{n:'HTML5',p:95},{n:'CSS3 / SCSS',p:92},{n:'TypeScript',p:72},{n:'Python',p:70},{n:'Java',p:75}] },
+  { icon:'⚛',  title:'Frameworks & Libraries', skills:[{n:'React.js',p:88},{n:'Vite',p:85},{n:'Tailwind CSS',p:90},{n:'Framer Motion',p:70},{n:'Spring Boot',p:72}] },
   { icon:'⚙',  title:'Tools & Workflow', skills:[{n:'Git & GitHub',p:85},{n:'VS Code',p:95},{n:'Figma',p:75},{n:'npm / Yarn',p:88}] },
+  { icon:'🛢',  title:'Backend & DevOps', skills:[{n:'MySQL',p:78},{n:'Microservices',p:68},{n:'Docker',p:65},{n:'CI/CD (GitHub Actions)',p:62}] },
 ]
-const TAGS = ['React','Vite','JavaScript','TypeScript','HTML5','CSS3','SCSS','Tailwind CSS','Git','GitHub','Figma','REST APIs','Responsive Design','Accessibility','Performance','Java','Spring Boot','MySQL']
+
+const TAGS = [
+  'React','Vite','JavaScript','TypeScript','HTML5','CSS3','SCSS','Tailwind CSS',
+  'Git','GitHub','Figma','REST APIs','Responsive Design','Accessibility','Performance',
+  'Java','Spring Boot','MySQL','Python','Microservices','Docker','CI/CD',
+]
 
 export default function Skills() {
   const ref = useRef(null)
-  const [vis, setVis] = useState(false);
-  
+  const [vis, setVis] = useState(false)
+
   useEffect(() => {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setVis(true) }, { threshold: 0.1 })
-    if (ref.current){
-      obs.observe(ref.current)
-    } 
+    if (ref.current) obs.observe(ref.current)
     return () => obs.disconnect()
   }, [])
-
-
-  
-
 
   return (
     <section id="skills" className="sec sk-sec" ref={ref}>
