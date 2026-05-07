@@ -5,7 +5,7 @@ const GROUPS = [
   { icon:'{ }', title:'Core Languages', skills:[{n:'JavaScript (ES6+)',p:90},{n:'HTML5',p:95},{n:'CSS3 / SCSS',p:92},{n:'TypeScript',p:72},{n:'Python',p:70},{n:'Java',p:75}] },
   { icon:'⚛',  title:'Frameworks & Libraries', skills:[{n:'React.js',p:88},{n:'Vite',p:85},{n:'Tailwind CSS',p:90},{n:'Framer Motion',p:70},{n:'Spring Boot',p:72}] },
   { icon:'⚙',  title:'Tools & Workflow', skills:[{n:'Git & GitHub',p:85},{n:'VS Code',p:95},{n:'Figma',p:75},{n:'npm / Yarn',p:88}] },
-  { icon:'🛢',  title:'Backend & DevOps', skills:[{n:'MySQL',p:78},{n:'Microservices',p:68},{n:'Docker',p:65},{n:'CI/CD (GitHub Actions)',p:62}] },
+  { icon:'🛢',  title:'Backend & DevOps', skills:[{n:'MySQL',p:78},{n:'Microservices',p:68},{n:'Docker',p:65},{n:'CI/CD (GitHub Actions)',p:60}] },
 ]
 
 const TAGS = [
